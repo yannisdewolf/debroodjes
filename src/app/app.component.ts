@@ -1,7 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {Broodje} from './broodje';
-import {FormControl} from '@angular/forms';
-import {BroodjesService} from './broodjes.service';
 
 @Component({
   selector: 'app-root',
