@@ -59,7 +59,7 @@ export class BroodjesService {
     new Broodje('Nutella', ['Nutella choco']),
     new Broodje('Oriental', ['Varkensgebraad', 'ananas', 'verse ui', 'pikante saus', 'sla']),
     new Broodje('Panino', ['Eiersalade', 'verse ui', 'komkommer', 'cresson', 'tomaat']),
-    new Broodje('Parma meloen', ['Parma ham', 'sla', 'tomaat', 'meloen', 'dressing']),
+    new Broodje('Parma meloen', ['Parmaham', 'sla', 'tomaat', 'meloen', 'dressing']),
     new Broodje('Philly', ['Philadelphia', 'komkommer', 'radijs', 'krulsulade']),
     new Broodje('Pic-nic', ['Varkensgebraad', 'augurk', 'cocktail', 'cresson', 'tomaat']),
     new Broodje('Porky', ['Varkensgebraad', 'cocktail', 'ananas', 'perzik']),
