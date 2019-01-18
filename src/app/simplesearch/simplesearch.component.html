@@ -1,0 +1,20 @@
+<div>
+  <input type="text" [formControl]="observableIngredient" placeholder="Ingredient">
+</div>
+
+<table class="table table-sm">
+  <tr>
+    <th scope="col">Naam</th>
+    <th scope="col">Ingredienten</th>
+  </tr>
+
+  <tr *ngFor="let broodje of filteredList">
+    <td>
+      {{broodje.naam}}
+    </td>
+    <td>
+      <app-broodje [ingredients]="broodje.ingredienten" [selectedIngredients]="matchedIngredients"></app-broodje>
+
+    </td>
+  </tr>
+</table>

@@ -1,0 +1,17 @@
+
+<div class="row"
+     [class.wanted]="state === 'WANTED'"
+     [class.not-wanted]="state === 'EXCLUDED'"
+>
+  <div class="col-6">
+{{name}}
+  </div>
+  <div class="col">
+  <button class="btn btn-info" [disabled]="state === 'EXCLUDED'" (click)="toggleWanted()">YES</button>
+  </div>
+
+  <div class="col">
+  <button class="btn btn-danger" [disabled]="state === 'WANTED'" (click)="toggleExclude()">NO</button>
+  </div>
+
+</div>

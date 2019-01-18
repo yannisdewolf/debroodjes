@@ -1,0 +1,30 @@
+<!-- wanted ingredients -->
+
+<div *ngIf="!showSearchResults">
+
+  <div class="sticky-top">
+    <button class="btn btn-success" (click)="doSearch()">Search</button>
+  </div>
+
+  <div>
+    <div *ngFor="let ingr of allIngredients">
+      <app-ingredient [name]="ingr" (emitter)="handleEvent($event)"></app-ingredient>
+    </div>
+  </div>
+
+</div>
+
+<div *ngIf="showSearchResults">
+
+  <div class="sticky-top">
+    <button class="btn btn-success" (click)="newSearch()">New Search</button>
+  </div>
+
+  <div>
+    <div *ngFor="let broodje of searchResults" class="row rijtje">
+        <div class="col-6">{{broodje.naam}}</div>
+        <div class="col-6">{{broodje.ingredientString()}}</div>
+    </div>
+  </div>
+
+</div>

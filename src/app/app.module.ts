@@ -6,12 +6,18 @@ import { AppComponent } from './app.component';
 import {FilterPipe} from './broodjesfilter.pipe';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { BroodjeComponent } from './broodje/broodje.component';
+import { IngredientComponent } from './ingredient/ingredient.component';
+import { SimplesearchComponent } from './simplesearch/simplesearch.component';
+import { ExtendedsearchComponent } from './extendedsearch/extendedsearch.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FilterPipe,
-    BroodjeComponent
+    BroodjeComponent,
+    IngredientComponent,
+    SimplesearchComponent,
+    ExtendedsearchComponent
   ],
   imports: [
     BrowserModule,
