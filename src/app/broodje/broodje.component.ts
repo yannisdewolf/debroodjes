@@ -19,7 +19,7 @@ export class BroodjeComponent implements OnInit {
   }
 
   public isSearchedIngredient(ingr: string): boolean {
-    return this.selectedIngredients.filter(si => si.includes(ingr)).length !== 0;
+    return this.selectedIngredients.filter(si => si === ingr ).length !== 0;
   }
 
 

@@ -2,7 +2,6 @@ import {Injectable} from '@angular/core';
 import {Broodje} from './broodje';
 import {BehaviorSubject, from, Observable} from 'rxjs';
 import {distinct, map} from 'rxjs/operators';
-import * as _ from 'underscore';
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +12,7 @@ export class BroodjesService {
   private broodjesLijst$: BehaviorSubject<Array<Broodje>>;
 
   private broodjeslijst: Broodje[] = [
-    new Broodje('Abraham', ['Fricandon', 'ui', 'augurken', 'mayo', 'curryketchup']),
+    new Broodje('Abraham', ['Fricandon', 'ui', 'augurken', 'mayonaise', 'curryketchup']),
     new Broodje('Aerobic', ['Eiersalade', 'tomaat', 'cresson', 'wortels']),
     new Broodje('Ardennais', ['Ardeense ham', 'augurken', 'mosterd', 'sla', 'tomaat']),
     new Broodje('Argenteuil', ['Ham', 'asperges', 'augurk', 'ei', 'tomaat', 'sla', 'cocktail']),
@@ -63,7 +62,7 @@ export class BroodjesService {
     new Broodje('Philly', ['Philadelphia', 'komkommer', 'radijs', 'krulsulade']),
     new Broodje('Pic-nic', ['Varkensgebraad', 'augurk', 'cocktail', 'cresson', 'tomaat']),
     new Broodje('Porky', ['Varkensgebraad', 'cocktail', 'ananas', 'perzik']),
-    new Broodje('Poulet light', ['Gebakken kip', 'light mayo', 'wortel', 'sla', 'tomaat', 'ei', 'komkommer']),
+    new Broodje('Poulet light', ['Gebakken kip', 'light mayonaise', 'wortel', 'sla', 'tomaat', 'ei', 'komkommer']),
     new Broodje('Portugees', ['Kip pikant', 'ei', 'sla', 'tomaat']),
     new Broodje('Pronto', ['Mozarella', 'basilicum', 'tomaat']),
     new Broodje('Qattro', ['Ardeense ham', 'kaas', 'préparé', 'komkommer', 'ei', 'cocktail', 'sla', 'tomaat']),
@@ -117,6 +116,10 @@ export class BroodjesService {
       .filter(broodje => broodje.ingredienten.find(e => {
         return e.toLowerCase().includes(ingredient.toLowerCase());
       }));
+  }
+
+  getBroodjesWithAnyIngredient(ingredients: Array<string>): Array<Broodje> {
+    return this.broodjeslijst.filter(broodje => broodje.hasAnyIngredient(ingredients));
   }
 
   getMatchingIngredients(ingredientPart: string): Array<string> {

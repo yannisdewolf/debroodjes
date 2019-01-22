@@ -34,9 +34,9 @@ export class SimplesearchComponent implements OnInit {
       this.filteredList = this.broodjesService.getAllBroodjes();
       this.matchedIngredients = [];
     } else {
-      this.filteredList = this.broodjesService.getBroodjes(ingredient);
-
       this.matchedIngredients = this.broodjesService.getMatchingIngredients(ingredient);
+
+      this.filteredList = this.broodjesService.getBroodjesWithAnyIngredient(this.matchedIngredients);
     }
 
 

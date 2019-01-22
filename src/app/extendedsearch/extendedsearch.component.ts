@@ -88,7 +88,7 @@ export class ExtendedsearchComponent implements OnInit {
       .filter(broodje => {
 
         const hasAnyIngredient =
-          this.wantedIngredient.length > 0?
+          this.wantedIngredient.length > 0 ?
           broodje.hasAnyIngredient(this.wantedIngredient) : true;
         const hasNoneIngredient =
           this.excludedIngredients.length > 0?
