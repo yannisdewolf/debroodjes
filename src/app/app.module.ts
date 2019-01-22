@@ -9,6 +9,7 @@ import { BroodjeComponent } from './broodje/broodje.component';
 import { IngredientComponent } from './ingredient/ingredient.component';
 import { SimplesearchComponent } from './simplesearch/simplesearch.component';
 import { ExtendedsearchComponent } from './extendedsearch/extendedsearch.component';
+import { CreditsComponent } from './credits/credits.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ExtendedsearchComponent } from './extendedsearch/extendedsearch.compone
     BroodjeComponent,
     IngredientComponent,
     SimplesearchComponent,
-    ExtendedsearchComponent
+    ExtendedsearchComponent,
+    CreditsComponent
   ],
   imports: [
     BrowserModule,
