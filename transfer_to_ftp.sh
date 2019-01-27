@@ -30,7 +30,7 @@ echo "files remotely deleted"
 
 echo "start uploading files"
 
-for fileToUpload in `find ${LOCAL_SOURCES} -maxdepth 1 -type f`; do
+for fileToUpload in `ls ${LOCAL_SOURCES}`; do
 
   echo ${fileToUpload}
   curl -T ${fileToUpload} ftp://${USERNAME}:${PASSWORD}@${HOST}/domains/flinkpoyd.be/public_html/debroodjes/backup/
