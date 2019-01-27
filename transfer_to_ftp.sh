@@ -14,7 +14,7 @@ echo "starting transfer to: ${HOST}"
 
 echo "start deleting files..."
 
-for f in `curl -l ftp://${USERNAME}:${PASSWORD}@${HOST}/domains/flinkpoyd.be/public_html/debroodjes/backup/`; do
+for f in `curl -l -v ftp://${USERNAME}:${PASSWORD}@${HOST}/domains/flinkpoyd.be/public_html/debroodjes/backup/`; do
 
   # Delete each file individually
   echo "deleting $f ..."
