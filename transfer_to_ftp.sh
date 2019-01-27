@@ -3,8 +3,8 @@
 LOCAL_SOURCES=./dist/debroodjes
 USERNAME=${ftp_user_name}
 PASSWORD=${ftp_password}
-HOST=185.182.57.5
-#HOST=$ftp_host${ftp_host}
+#HOST=185.182.57.5
+HOST=$ftp_host${ftp_host}
 
 echo "starting transfer to: ${HOST}"
 
