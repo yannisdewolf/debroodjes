@@ -1,9 +1,9 @@
 #!/bin/bash
 
 LOCAL_SOURCES=./dist/debroodjes
-USERNAME=$ftp_user_name
-PASSWORD=$ftp_password
-HOST=$ftp_host$ftp_host
+USERNAME=${ftp_user_name}
+PASSWORD=${ftp_password}
+HOST=$ftp_host${ftp_host}
 
 echo "starting transfer to: " ${HOST}
 
