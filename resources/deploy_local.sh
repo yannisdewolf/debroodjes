@@ -1,11 +1,11 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-LOCAL_SOURCES=./dist/debroodjes
-USERNAME=$ftp_user_name
-PASSWORD=$ftp_password
-HOST=$ftp_host$ftp_host
 
-echo "starting transfer to: " ${HOST}
+LOCAL_SOURCES=../dist/debroodjes
+USERNAME=yannimx273
+PASSWORD=zqgkpofc
+HOST=185.182.57.5
+
 
 #################################
 ##### delete existing files #####
