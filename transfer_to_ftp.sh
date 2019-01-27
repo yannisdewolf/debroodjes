@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 LOCAL_SOURCES=./dist/debroodjes
 USERNAME=$ftp_user_name

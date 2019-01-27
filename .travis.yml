@@ -16,4 +16,4 @@ script:
   - ng build --prod
 
 after_success:
-  - transfer_to_ftp.sh
+  - ./transfer_to_ftp.sh
