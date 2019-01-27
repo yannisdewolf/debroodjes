@@ -15,5 +15,6 @@ script:
 #  - npm install
   - ng build --prod
 
-after_success:
-  - ./transfer_to_ftp.sh
+deploy:
+  provider: script
+  script: bash transfer_to_ftp.sh
