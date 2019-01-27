@@ -1,3 +1,9 @@
+language: node_js
+node_js:
+  -"8"
+sudo: true
+dist: trusty
+
 branches:
   only:
     - master
@@ -6,5 +12,6 @@ before_script:
   - npm install -g @angular/cli
 
 script:
+  - npm install
   - ng build --prod
   - ng test
