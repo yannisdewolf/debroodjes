@@ -1,7 +1,4 @@
 RewriteEngine on
-RewriteCond %{REQUEST_FILENAME} -s [OR]
-RewriteCond %{REQUEST_FILENAME} -l [OR]
-RewriteCond %{REQUEST_FILENAME} -d
-RewriteRule ^.*$ - [NC,L]
-
-RewriteRule ^(.*) /index.html [NC,L]
+RewriteCond %{HTTP_HOST} ^flinkpoyd.be [NC,OR]
+RewriteCond %{HTTP_HOST} ^debroodjes.flinkpoyd.be [NC]
+RewriteRule ^(.*)$ https://yannisdewolf.github.io/debroodjes [L,R=301,NC]
