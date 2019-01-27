@@ -1,15 +1,15 @@
-#language: node_js
-#node_js:
-#  - "node"
+language: node_js
+node_js:
+  - "node"
 #sudo: true
-#dist: trusty
+dist: trusty
 
 branches:
   only:
     - master
 
-#before_script:
-#  - npm install -g @angular/cli
+before_script:
+  - npm install -g @angular/cli
 
 #script:
 #  - npm install
