@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-
+LOCAL_SOURCES=./dist/debroodjes
 USERNAME=$ftp_user_name
 PASSWORD=$ftp_password
 HOST=$ftp_host$ftp_host
