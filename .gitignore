@@ -41,3 +41,9 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+/resources/add_files_from_directory.sh
+/resources/broodjes.txt
+/resources/broodjes-4.txt
+/resources/broodjes-5.txt
+/resources/broodjes-1.txt
+/resources/remove_data.sh
