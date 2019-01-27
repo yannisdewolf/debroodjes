@@ -33,7 +33,7 @@ echo "start uploading files"
 for fileToUpload in `ls ${LOCAL_SOURCES}`; do
 
   echo ${fileToUpload}
-  curl -T ${fileToUpload} ftp://${USERNAME}:${PASSWORD}@${HOST}/domains/flinkpoyd.be/public_html/debroodjes/backup/
+  curl -T ${LOCAL_SOURCES}/${fileToUpload} ftp://${USERNAME}:${PASSWORD}@${HOST}/domains/flinkpoyd.be/public_html/debroodjes/backup/
 
 done
 echo "upload files done"
