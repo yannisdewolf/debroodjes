@@ -15,5 +15,11 @@ script:
   - npm install
   - ng build --prod
 
-after_success:
-  - ./transfer_to_ftp.sh
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  local_dir: dist/debroodjes
+  on:
+    branch: master
