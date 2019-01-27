@@ -12,8 +12,9 @@ before_script:
   - npm install -g @angular/cli
 
 script:
-  - npm install
-  - ng build --prod --base-href=/debroodjes
+  - yarn lint
+  - yarn build --base-href /debroodjes/
+  - mv dist/debroodjes/index.html dist/debroodjes/404.html
 
 deploy:
   provider: pages

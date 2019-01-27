@@ -11,7 +11,7 @@ export class BroodjeComponent implements OnInit {
   ingredients: Array<string>;
 
   @Input()
-  selectedIngredients: Array<string>
+  selectedIngredients: Array<string>;
 
   constructor() { }
 

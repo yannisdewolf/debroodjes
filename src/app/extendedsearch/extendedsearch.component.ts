@@ -70,14 +70,14 @@ export class ExtendedsearchComponent implements OnInit {
       const foundInWanted = this.wantedIngredient.indexOf(event.name, 0);
 
       console.log('RESET ' + event.name);
-      if (foundInWanted > -1){
+      if (foundInWanted > -1) {
         this.wantedIngredient = this.wantedIngredient.filter(el => el !== event.name);
         // this.wantedIngredient = this.wantedIngredient.splice(foundInWanted, 1);
         console.log('removed from wantedIngredient. Now it is', this.wantedIngredient);
       }
 
       const foundInExcluded = this.excludedIngredients.indexOf(event.name, 0);
-      if(foundInExcluded > -1){
+      if (foundInExcluded > -1) {
         this.excludedIngredients = this.excludedIngredients.filter(el => el !== event.name);
         // this.excludedIngredients = this.excludedIngredients.splice(foundInExcluded, 1);
       }
@@ -91,7 +91,7 @@ export class ExtendedsearchComponent implements OnInit {
           this.wantedIngredient.length > 0 ?
           broodje.hasAnyIngredient(this.wantedIngredient) : true;
         const hasNoneIngredient =
-          this.excludedIngredients.length > 0?
+          this.excludedIngredients.length > 0 ?
           broodje.hasNoneIngredient(this.excludedIngredients) : true;
 
         return hasAnyIngredient && hasNoneIngredient; }

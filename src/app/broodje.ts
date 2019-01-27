@@ -15,16 +15,16 @@ export class Broodje {
     return this.ingredienten.findIndex(i => i.includes(ingredient)) !== -1;
   }
 
-  ingredientString() : string {
+  ingredientString(): string {
     return _.reduce(this.ingredienten, (first, second) => first + ', ' + second);
   }
 
-  hasAnyIngredient(wantedIngredient: string[]): boolean{
+  hasAnyIngredient(wantedIngredient: string[]): boolean {
     return _.intersection(this.ingredienten, wantedIngredient).length > 0 ;
   }
 
   hasNoneIngredient(excludedIngredient: string[]): boolean {
-    return _.intersection(this.ingredienten, excludedIngredient).length == 0;
+    return _.intersection(this.ingredienten, excludedIngredient).length === 0;
   }
 
 }
