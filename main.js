@@ -416,7 +416,7 @@ var BroodjesService = /** @class */ (function () {
     };
     BroodjesService.prototype.getMatchingIngredients = function (ingredientPart) {
         return this.getAllIngredients()
-            .filter(function (uniqueIngredient) { return uniqueIngredient.toLowerCase().includes(ingredientPart); });
+            .filter(function (uniqueIngredient) { return uniqueIngredient.toLowerCase().includes(ingredientPart.toLowerCase()); });
     };
     BroodjesService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
