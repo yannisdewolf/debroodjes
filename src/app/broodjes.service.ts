@@ -125,7 +125,7 @@ export class BroodjesService {
 
   getMatchingIngredients(ingredientPart: string): Array<string> {
     return this.getAllIngredients()
-      .filter(uniqueIngredient => uniqueIngredient.toLowerCase().includes(ingredientPart));
+      .filter(uniqueIngredient => uniqueIngredient.toLowerCase().includes(ingredientPart.toLowerCase()));
   }
 
 }
