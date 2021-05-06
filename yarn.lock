@@ -9,7 +9,7 @@
     "@angular-devkit/core" "7.1.4"
     rxjs "6.3.3"
 
-"@angular-devkit/build-angular@~0.11.0":
+"@angular-devkit/build-angular@^0.11.4":
   version "0.11.4"
   resolved "https://registry.yarnpkg.com/@angular-devkit/build-angular/-/build-angular-0.11.4.tgz#795084e29c66a71da15227cf2ac29794aa807c7c"
   dependencies:
@@ -312,6 +312,10 @@
 "@types/selenium-webdriver@^3.0.0":
   version "3.0.14"
   resolved "https://registry.yarnpkg.com/@types/selenium-webdriver/-/selenium-webdriver-3.0.14.tgz#0b20a2370e6b1b8322c9c3dfcaa409e6c7c0c0a9"
+
+"@types/underscore@^1.8.9":
+  version "1.11.2"
+  resolved "https://registry.yarnpkg.com/@types/underscore/-/underscore-1.11.2.tgz#9441e0f6402bbcb72dbee771582fa57c5a1dedd3"
 
 "@webassemblyjs/ast@1.7.10":
   version "1.7.10"
@@ -933,6 +937,10 @@ bonjour@^3.5.0:
     dns-txt "^2.0.2"
     multicast-dns "^6.0.1"
     multicast-dns-service-types "^1.1.0"
+
+bootstrap@^4.2.1:
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.6.0.tgz#97b9f29ac98f98dfa43bf7468262d84392552fd7"
 
 brace-expansion@^1.1.7:
   version "1.1.11"
@@ -5152,9 +5160,15 @@ run-queue@^1.0.0, run-queue@^1.0.3:
   dependencies:
     aproba "^1.1.1"
 
-rxjs@6.3.3, rxjs@^6.1.0, rxjs@~6.3.3:
+rxjs@6.3.3, rxjs@^6.1.0:
   version "6.3.3"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-6.3.3.tgz#3c6a7fa420e844a81390fb1158a9ec614f4bad55"
+  dependencies:
+    tslib "^1.9.0"
+
+rxjs@^6.3.3:
+  version "6.6.7"
+  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-6.6.7.tgz#90ac018acabf491bf65044235d5863c4dab804c9"
   dependencies:
     tslib "^1.9.0"
 
@@ -6100,6 +6114,10 @@ uglifyjs-webpack-plugin@^1.2.4:
 ultron@~1.1.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ultron/-/ultron-1.1.1.tgz#9fe1536a10a664a65266a1e3ccf85fd36302bc9c"
+
+underscore@^1.12.1:
+  version "1.12.1"
+  resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.12.1.tgz#7bb8cc9b3d397e201cf8553336d262544ead829e"
 
 union-value@^1.0.0:
   version "1.0.0"
